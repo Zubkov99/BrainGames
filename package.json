@@ -12,7 +12,8 @@
     "url": "git+https://github.com/Zubkov99/frontend-project-lvl1.git"
   },
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "author": "",
   "license": "ISC",
