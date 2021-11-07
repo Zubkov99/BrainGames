@@ -6,3 +6,4 @@
 ![workflow](https://github.com/Zubkov99/frontend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg)
 
 ![asciinema]https://asciinema.org/a/TitscPTS68e8WQjniBlwqp7WR
+![asciinema]https://asciinema.org/a/QKqmlG3OcA3tSGTyQCpfGcQkB
