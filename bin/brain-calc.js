@@ -26,8 +26,7 @@ for (let i = 0; i < 3; i += 1) {
   if (+userAnswer === +trueAnswer) {
     console.log('Correct!');
   } else {
-    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.`);
-    console.log(`Let's try again, ${userName}!`);
+    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'. \n Let's try again, ${userName}!`);
     break;
   }
 
