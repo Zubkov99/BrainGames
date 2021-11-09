@@ -9,3 +9,4 @@
 ![asciinema]https://asciinema.org/a/QKqmlG3OcA3tSGTyQCpfGcQkB
 ![asciinema]https://asciinema.org/a/Wx9Zc2Ptb5H7ZbvEKCQSIEOU0
 ![asciinema]https://asciinema.org/a/UkvEMox7WURtwYcz6mIpP8t3K
+![asciinema]https://asciinema.org/a/U3MjnTREdQahJHyK5CcAE8zhK
