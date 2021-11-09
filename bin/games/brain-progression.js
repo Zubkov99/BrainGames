@@ -16,7 +16,7 @@ for (let round = 0; round < 3; round += 1) {
 
   const trueAnswer = arr[randomElem];
   arr[randomElem] = '..';
-  console.log(`Question: ${arr}`);
+  console.log(`Question: ${arr.join(' ')}`);
 
   const userAnswer = readlineSync.question('Your answer:');
   if (+userAnswer === +trueAnswer) {
