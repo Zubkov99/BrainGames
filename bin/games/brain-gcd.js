@@ -16,7 +16,7 @@ for (let i = 0; i < 3; i += 1) {
   const firsrNum = getRandomInt(0, 50);
   const secondNum = getRandomInt(0, 50);
   const trueAnswer = getTrueAnswer(firsrNum, secondNum);
-  console.log(`Question: ${firsrNum}, ${secondNum}`);
+  console.log(`Question: ${firsrNum} ${secondNum}`);
 
   const userAnswer = readlineSync.question('Your answer:');
   if (+userAnswer === +trueAnswer) {
