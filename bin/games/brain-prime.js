@@ -3,7 +3,6 @@
 import readlineSync from 'readline-sync';
 import { getRandomInt, getNameAndSayHi } from '../../src/index.js';
 
-// eslint-disable-next-line consistent-return
 const getTrueAnswer = (num) => {
   if (num < 3) {
     return 'no';
@@ -12,8 +11,8 @@ const getTrueAnswer = (num) => {
     if (num % i === 0) {
       return 'no';
     }
-    return 'yes';
   }
+  return 'yes';
 };
 
 const userName = getNameAndSayHi();
