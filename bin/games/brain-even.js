@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { getRandomInt, getNameAndSayHi } from '../src/index.js';
+import { getRandomInt, getNameAndSayHi } from '../../src/index.js';
 
 const getTrueAnswer = (num) => {
   if (num % 2 === 0) {

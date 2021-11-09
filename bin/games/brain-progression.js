@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { getRandomInt, getNameAndSayHi } from '../src/index.js';
+import { getRandomInt, getNameAndSayHi } from '../../src/index.js';
 
 const userName = getNameAndSayHi();
+console.log('What number is missing in the progression?');
 
 for (let round = 0; round < 3; round += 1) {
   const arr = [];
@@ -15,8 +16,6 @@ for (let round = 0; round < 3; round += 1) {
 
   const trueAnswer = arr[randomElem];
   arr[randomElem] = '..';
-
-  console.log('What number is missing in the progression?');
   console.log(`Question: ${arr}`);
 
   const userAnswer = readlineSync.question('Your answer:');
