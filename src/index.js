@@ -12,3 +12,18 @@ export const getNameAndSayHi = () => {
   console.log(`Hello, ${userName}`);
   return userName;
 };
+
+export const gameEngine = (trueAnswer, userAnswer, userName, counter) => {
+  if (trueAnswer === userAnswer) {
+    console.log('Correct!');
+  } else {
+    // eslint-disable-next-line no-unused-expressions
+    console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${trueAnswer}. \n Let's try again, ${userName}!`);
+    return false;
+  }
+  if (counter >= 2) {
+    console.log(`Congratulations, ${userName}!`);
+  }
+
+  return true;
+};
