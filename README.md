@@ -31,21 +31,26 @@
 Asciinemas of launching and playing games
 
 **How works brain-even:**
+Для запуска введите: brain-even
 
 ![asciinema]https://asciinema.org/a/TitscPTS68e8WQjniBlwqp7WR
 
 **How works brain-calc:**
+Для запуска введите: brain-calc
 
 ![asciinema]https://asciinema.org/a/QKqmlG3OcA3tSGTyQCpfGcQkB
 
 **How works brain-gcd:**
+Для запуска введите: brain-gcd
 
 ![asciinema]https://asciinema.org/a/Wx9Zc2Ptb5H7ZbvEKCQSIEOU0
 
 **How works brain-progression:**
+Для запуска введите: brain-progression
 
 ![asciinema]https://asciinema.org/a/UkvEMox7WURtwYcz6mIpP8t3K
 
 **How works brain-prime:**
+Для запуска введите: brain-prime
 
 ![asciinema]https://asciinema.org/a/U3MjnTREdQahJHyK5CcAE8zhK

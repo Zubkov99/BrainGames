@@ -1,28 +1,26 @@
 /* eslint-disable import/prefer-default-export */
-import readlineSync from 'readline-sync';
-import { getRandomInt, getNameAndSayHi, gameEngine } from '../index.js';
+import { getRandomInt, getNameAndSayHi } from '../index.js';
+import gameEngine from '../gameEngine.js';
 
 const evenGame = () => {
-  const getTrueAnswer = (num) => {
-    if (num % 2 === 0) {
-      return 'yes';
-    } return 'no';
-  };
+  const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+  const userName = getNameAndSayHi(description);
 
-  const userName = getNameAndSayHi();
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  const createRound = () => {
+    const getTrueAnswer = (num) => {
+      if (num % 2 === 0) {
+        return 'yes';
+      } return 'no';
+    };
 
-  for (let i = 0; i < 3; i += 1) {
     const randomNum = getRandomInt(0, 100);
     const trueAnswer = getTrueAnswer(randomNum);
-    console.log(`Question: ${randomNum}`);
+    const question = `Question: ${randomNum}`;
 
-    const userAnswer = readlineSync.question('Your answer:');
+    return [trueAnswer, question];
+  };
 
-    if (gameEngine(trueAnswer, userAnswer, userName, i) === false) {
-      break;
-    }
-  }
+  gameEngine(createRound, userName);
 };
 
 export default evenGame;

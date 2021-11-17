@@ -1,9 +1,8 @@
 import readlineSync from 'readline-sync';
 
+// eslint-disable-next-line arrow-body-style
 export const getRandomInt = (min, max) => {
-  const start = Math.ceil(min);
-  const end = Math.floor(max);
-  return Math.floor(Math.random() * (end - start)) + start;
+  return Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min))) + Math.ceil(min);
 };
 
 export const getNameAndSayHi = (description) => {
@@ -12,25 +11,4 @@ export const getNameAndSayHi = (description) => {
   console.log(`Hello, ${userName}`);
   console.log(description);
   return userName;
-};
-
-export const gameEngine = (trueAnswer, userAnswer, userName, counter) => {
-  if (trueAnswer === userAnswer) {
-    console.log('Correct!');
-  } else {
-    // eslint-disable-next-line no-unused-expressions
-    console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${trueAnswer}. \n Let's try again, ${userName}!`);
-    return false;
-  }
-  if (counter >= 2) {
-    console.log(`Congratulations, ${userName}!`);
-  }
-
-  return true;
-};
-
-export const generateRound = (func) => {
-  for (let i = 0; i < 3; i += 1) {
-    func();
-  }
 };
