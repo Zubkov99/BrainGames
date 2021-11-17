@@ -6,10 +6,11 @@ export const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (end - start)) + start;
 };
 
-export const getNameAndSayHi = () => {
+export const getNameAndSayHi = (description) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
+  console.log(description);
   return userName;
 };
 
@@ -26,4 +27,10 @@ export const gameEngine = (trueAnswer, userAnswer, userName, counter) => {
   }
 
   return true;
+};
+
+export const generateRound = (func) => {
+  for (let i = 0; i < 3; i += 1) {
+    func();
+  }
 };
