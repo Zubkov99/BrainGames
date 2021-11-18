@@ -1,10 +1,13 @@
 /* eslint-disable consistent-return */
 import readlineSync from 'readline-sync';
+import { getNameAndSayHi } from './index.js';
 
-const gameEngine = (createRound, userName) => {
-  const numberOfround = 3;
+const runGameEngine = (createRound, description) => {
+  const numberOfRounds = 3;
 
-  for (let i = 0; i < numberOfround; i += 1) {
+  const userName = getNameAndSayHi(description);
+
+  for (let i = 0; i < numberOfRounds; i += 1) {
     const trueAnswerAndQuestion = createRound();
     const correctAnswer = trueAnswerAndQuestion[0];
     const question = trueAnswerAndQuestion[1];
@@ -18,10 +21,8 @@ const gameEngine = (createRound, userName) => {
     } else {
       return console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". \n Let's try again, ${userName}!`);
     }
-    if (i >= 2) {
-      return console.log(`Congratulations, ${userName}!`);
-    }
   }
+  return console.log(`Congratulations, ${userName}!`);
 };
 
-export default gameEngine;
+export default runGameEngine;

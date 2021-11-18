@@ -1,29 +1,27 @@
-import { getRandomInt, getNameAndSayHi } from '../index.js';
-import gameEngine from '../gameEngine.js';
+import { getRandomInt } from '../index.js';
+import runGameEngine from '../runGameEngine.js';
+
+const generateTrueAnswer = (num) => {
+  if (num < 3) {
+    return 'no';
+  }
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) {
+      return 'no';
+    }
+  }
+  return 'yes';
+};
+
+const createRound = () => {
+  const randomNum = getRandomInt(1, 100);
+  const question = `Question: ${randomNum}`;
+  return [generateTrueAnswer(randomNum), question];
+};
 
 const primeGame = () => {
   const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const userName = getNameAndSayHi(description);
-
-  const createRound = () => {
-    const randomNum = getRandomInt(1, 100);
-    const question = `Question: ${randomNum}`;
-    const generateTrueAnswer = () => {
-      if (randomNum < 3) {
-        return 'no';
-      }
-      for (let i = 2; i < randomNum; i += 1) {
-        if (randomNum % i === 0) {
-          return 'no';
-        }
-      }
-      return 'yes';
-    };
-
-    return [generateTrueAnswer(), question];
-  };
-
-  gameEngine(createRound, userName);
+  runGameEngine(createRound, description);
 };
 
 export default primeGame;
