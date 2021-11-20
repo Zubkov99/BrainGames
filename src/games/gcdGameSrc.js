@@ -16,10 +16,10 @@ const createRound = () => {
   return [getTrueAnswer(firstNum, secondNum), question];
 };
 
-const gcdGame = () => {
+const startGcdGame = () => {
   const description = 'Find the greatest common divisor of given numbers.';
 
   runGameEngine(createRound, description);
 };
 
-export default gcdGame;
+export default startGcdGame;

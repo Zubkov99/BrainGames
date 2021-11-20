@@ -14,7 +14,7 @@
 ```
 2. Введите make install и проект установится
 ```bash
-    make instal
+    make install
 ```
 
 Мой первый проект на Хекслете. «Игры разума» — набор из пяти консольных игр. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. Игры:
@@ -33,24 +33,24 @@ Asciinemas of launching and playing games
 **How works brain-even:**
 Для запуска введите: brain-even
 
-![asciinema]https://asciinema.org/a/TitscPTS68e8WQjniBlwqp7WR
+[![asciicast](https://asciinema.org/a/TitscPTS68e8WQjniBlwqp7WR.svg)](https://asciinema.org/a/TitscPTS68e8WQjniBlwqp7WR)
 
 **How works brain-calc:**
 Для запуска введите: brain-calc
 
-![asciinema]https://asciinema.org/a/QKqmlG3OcA3tSGTyQCpfGcQkB
+[![asciicast](https://asciinema.org/a/QKqmlG3OcA3tSGTyQCpfGcQkB.svg)](https://asciinema.org/a/QKqmlG3OcA3tSGTyQCpfGcQkB)
 
 **How works brain-gcd:**
 Для запуска введите: brain-gcd
 
-![asciinema]https://asciinema.org/a/Wx9Zc2Ptb5H7ZbvEKCQSIEOU0
+[![asciicast](https://asciinema.org/a/Wx9Zc2Ptb5H7ZbvEKCQSIEOU0.svg)](https://asciinema.org/a/Wx9Zc2Ptb5H7ZbvEKCQSIEOU0)
 
 **How works brain-progression:**
 Для запуска введите: brain-progression
 
-![asciinema]https://asciinema.org/a/UkvEMox7WURtwYcz6mIpP8t3K
+[![asciicast](https://asciinema.org/a/UkvEMox7WURtwYcz6mIpP8t3K.svg)](https://asciinema.org/a/UkvEMox7WURtwYcz6mIpP8t3K)
 
 **How works brain-prime:**
 Для запуска введите: brain-prime
 
-![asciinema]https://asciinema.org/a/U3MjnTREdQahJHyK5CcAE8zhK
+[![asciicast](https://asciinema.org/a/U3MjnTREdQahJHyK5CcAE8zhK.svg)](https://asciinema.org/a/U3MjnTREdQahJHyK5CcAE8zhK)

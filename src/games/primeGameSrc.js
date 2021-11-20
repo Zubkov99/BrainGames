@@ -19,9 +19,9 @@ const createRound = () => {
   return [generateTrueAnswer(randomNum), question];
 };
 
-const primeGame = () => {
+const startPrimeGame = () => {
   const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   runGameEngine(createRound, description);
 };
 
-export default primeGame;
+export default startPrimeGame;

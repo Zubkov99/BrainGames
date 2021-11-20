@@ -16,13 +16,12 @@ const runGameEngine = (createRound, description) => {
     const userAnswer = readlineSync.question('Your answer:');
 
     // eslint-disable-next-line eqeqeq
-    if (correctAnswer == userAnswer) {
-      console.log('Correct!');
-    } else {
+    if (correctAnswer != userAnswer) {
       return console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". \n Let's try again, ${userName}!`);
     }
+    console.log('Correct!');
   }
-  return console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default runGameEngine;

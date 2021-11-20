@@ -1,16 +1,21 @@
 import { getRandomInt } from '../index.js';
 import runGameEngine from '../runGameEngine.js';
 
-const createRound = () => {
+const createProgression = (progressionLength, randomNum) => {
+  let firstElem = randomNum;
   const progressionCollection = [];
-  let randomNum = getRandomInt(0, 100);
+  for (let i = 0; i < progressionLength; i += 1) {
+    progressionCollection.push(firstElem += 2);
+  }
+  return progressionCollection;
+};
+
+const createRound = () => {
+  const randomNum = getRandomInt(0, 100);
   const randomElem = getRandomInt(0, 10);
   const progressionLength = 10;
 
-  for (let i = 0; i < progressionLength; i += 1) {
-    progressionCollection.push(randomNum += 2);
-  }
-
+  const progressionCollection = createProgression(progressionLength, randomNum);
   const trueAnswer = progressionCollection[randomElem];
   progressionCollection[randomElem] = '..';
   const question = `Question: ${progressionCollection.join(' ')}`;
@@ -18,9 +23,9 @@ const createRound = () => {
   return [trueAnswer, question];
 };
 
-const progressionGame = () => {
+const startProgressionGame = () => {
   const description = 'What number is missing in the progression?';
   runGameEngine(createRound, description);
 };
 
-export default progressionGame;
+export default startProgressionGame;
