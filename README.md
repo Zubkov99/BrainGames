@@ -13,7 +13,7 @@ ____
 
 1. Copy the repository 
 ```bash
-    git clone git@github.com:Zubkov99/frontend-project-lvl1.git
+    git@github.com:Zubkov99/BrainGames.git
 ```
 2. Type **make install** and the project is downloaded
 ```bash
