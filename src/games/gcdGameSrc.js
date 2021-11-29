@@ -12,8 +12,8 @@ const getTrueAnswer = (a, b) => {
 const createRound = () => {
   const firstNum = getRandomInt(0, 50);
   const secondNum = getRandomInt(0, 50);
-  const dataForquestion = [firstNum, secondNum].join(' ');
-  return [getTrueAnswer(firstNum, secondNum), dataForquestion];
+  const question = `Question: ${firstNum} ${secondNum}`;
+  return [getTrueAnswer(firstNum, secondNum), question];
 };
 
 const startGcdGame = () => {

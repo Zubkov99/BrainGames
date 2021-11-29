@@ -1,22 +1,24 @@
 import { getRandomInt } from '../index.js';
 import runGameEngine from '../runGameEngine.js';
 
-const generateTrueAnswer = (num) => {
-  if (num < 3) {
-    return 'no';
+const checkPrime = (number) => {
+  if (number < 3) {
+    return false;
   }
-  for (let i = 2; i < num; i += 1) {
-    if (num % i === 0) {
-      return 'no';
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) {
+      return false;
     }
   }
-  return 'yes';
+  return true;
 };
+
+const generateTrueAnswer = (number) => (checkPrime(number) ? 'yes' : 'no');
 
 const createRound = () => {
   const randomNum = getRandomInt(1, 100);
-  const dataForquestion = randomNum;
-  return [generateTrueAnswer(randomNum), dataForquestion];
+  const question = `Question: ${randomNum}`;
+  return [generateTrueAnswer(randomNum), question];
 };
 
 const startPrimeGame = () => {

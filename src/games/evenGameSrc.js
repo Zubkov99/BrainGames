@@ -9,9 +9,9 @@ const getTrueAnswer = (num) => (isEven(num) ? 'yes' : 'no');
 const createRound = () => {
   const randomNum = getRandomInt(0, 100);
   const trueAnswer = getTrueAnswer(randomNum);
-  const dataForquestion = randomNum;
+  const question = `Question: ${randomNum}`;
 
-  return [trueAnswer, dataForquestion];
+  return [trueAnswer, question];
 };
 
 const startEvenGame = () => {

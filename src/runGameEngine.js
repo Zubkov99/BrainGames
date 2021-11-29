@@ -10,8 +10,7 @@ const runGameEngine = (createRound, description) => {
   for (let i = 0; i < numberOfRounds; i += 1) {
     const trueAnswerAndQuestion = createRound();
     const correctAnswer = trueAnswerAndQuestion[0];
-    const question = `Question ${trueAnswerAndQuestion[1]}`;
-    // const question = trueAnswerAndQuestion[1];
+    const question = trueAnswerAndQuestion[1];
 
     console.log(question);
     const userAnswer = readlineSync.question('Your answer:');

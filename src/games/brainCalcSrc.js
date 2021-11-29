@@ -21,10 +21,10 @@ const createRound = () => {
   const randomSigns = signs[getRandomInt(0, signs.length)];
   const firstNum = getRandomInt(10, 40);
   const secondNum = getRandomInt(10, 40);
-  const dataForquestion = `${firstNum} ${randomSigns} ${secondNum}`;
+  const question = `Question: ${firstNum} ${randomSigns} ${secondNum}`;
   const trueAnswer = getTrueAnswer(firstNum, randomSigns, secondNum);
 
-  return [trueAnswer, dataForquestion];
+  return [trueAnswer, question];
 };
 
 const startCalcGame = () => {
