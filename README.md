@@ -1,4 +1,4 @@
-# Проекст на Хеслет: игры разума
+# Heslet Project: Brain Games
 
 ### Hexlet tests and linter status:
 
@@ -6,51 +6,58 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/b2c6298928454886ea01/maintainability)](https://codeclimate.com/github/Zubkov99/frontend-project-lvl1/maintainability)
 
+![workflow](https://github.com/Zubkov99/frontend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg)
 
-#### Для установки сделайте следущее:
-1. Склонируйте репозиторий 
+____
+## How to install a project:
+
+1. Copy the repository 
 ```bash
     git clone git@github.com:Zubkov99/frontend-project-lvl1.git
 ```
-2. Введите make install и проект установится
+2. Type **make install** and the project is downloaded
 ```bash
     make install
 ```
+____
+## What is this project about?
 
-Мой первый проект на Хекслете. «Игры разума» — набор из пяти консольных игр. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. Игры:
+My first project in Hexlet. "Brain Games— is a set of five console games. Each game asks questions that need to be answered correctly. The game is completed after three correct answers. Incorrect answers end the game and offer to go through it again. Games:
 
-Калькулятор. Арифметические выражения, которые необходимо вычислить.
-Прогрессия. Поиск пропущенных чисел в последовательности чисел.
-Определение четного числа.
-Определение наибольшего общего делителя.
-Определение простого числа.
+1. **Calculator:** Arithmetic expressions that need to be calculated.
+
+2. **Progression:** find the missing number in the arithmetic progression
+
+3. **Checking an even number**
+
+4. **Find the greatest common divisor**
+
+5. **Checking a prime number**
 
 
-![workflow](https://github.com/Zubkov99/frontend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg)
 
-Asciinemas of launching and playing games
+____
+## How start the game?
 
-**How works brain-even:**
-Для запуска введите: brain-even
+✅ To start the brain-even, type: brain-even
 
 [![asciicast](https://asciinema.org/a/TitscPTS68e8WQjniBlwqp7WR.svg)](https://asciinema.org/a/TitscPTS68e8WQjniBlwqp7WR)
 
-**How works brain-calc:**
-Для запуска введите: brain-calc
+
+✅ To start the brain-calc, type: brain-calc
 
 [![asciicast](https://asciinema.org/a/QKqmlG3OcA3tSGTyQCpfGcQkB.svg)](https://asciinema.org/a/QKqmlG3OcA3tSGTyQCpfGcQkB)
 
-**How works brain-gcd:**
-Для запуска введите: brain-gcd
+
+✅ To start the brain-gcd, type: brain-gcd
 
 [![asciicast](https://asciinema.org/a/Wx9Zc2Ptb5H7ZbvEKCQSIEOU0.svg)](https://asciinema.org/a/Wx9Zc2Ptb5H7ZbvEKCQSIEOU0)
 
-**How works brain-progression:**
-Для запуска введите: brain-progression
+
+ ✅ To start the brain-progression, type: brain-progression
 
 [![asciicast](https://asciinema.org/a/UkvEMox7WURtwYcz6mIpP8t3K.svg)](https://asciinema.org/a/UkvEMox7WURtwYcz6mIpP8t3K)
 
-**How works brain-prime:**
-Для запуска введите: brain-prime
+ ✅ To start the brain-prime, type: brain-prime
 
 [![asciicast](https://asciinema.org/a/U3MjnTREdQahJHyK5CcAE8zhK.svg)](https://asciinema.org/a/U3MjnTREdQahJHyK5CcAE8zhK)
