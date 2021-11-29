@@ -15,8 +15,8 @@ const generateTrueAnswer = (num) => {
 
 const createRound = () => {
   const randomNum = getRandomInt(1, 100);
-  const question = `Question: ${randomNum}`;
-  return [generateTrueAnswer(randomNum), question];
+  const dataForquestion = randomNum;
+  return [generateTrueAnswer(randomNum), dataForquestion];
 };
 
 const startPrimeGame = () => {

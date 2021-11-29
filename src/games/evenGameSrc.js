@@ -2,18 +2,16 @@
 import { getRandomInt } from '../index.js';
 import runGameEngine from '../runGameEngine.js';
 
-const getTrueAnswer = (num) => {
-  if (num % 2 === 0) {
-    return 'yes';
-  } return 'no';
-};
+const isEven = (number) => number % 2 === 0;
+
+const getTrueAnswer = (num) => (isEven(num) ? 'yes' : 'no');
 
 const createRound = () => {
   const randomNum = getRandomInt(0, 100);
   const trueAnswer = getTrueAnswer(randomNum);
-  const question = `Question: ${randomNum}`;
+  const dataForquestion = randomNum;
 
-  return [trueAnswer, question];
+  return [trueAnswer, dataForquestion];
 };
 
 const startEvenGame = () => {

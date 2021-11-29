@@ -18,9 +18,9 @@ const createRound = () => {
   const progressionCollection = createProgression(progressionLength, randomNum);
   const trueAnswer = progressionCollection[randomElem];
   progressionCollection[randomElem] = '..';
-  const question = `Question: ${progressionCollection.join(' ')}`;
+  const dataForquestion = progressionCollection.join(' ');
 
-  return [trueAnswer, question];
+  return [trueAnswer, dataForquestion];
 };
 
 const startProgressionGame = () => {

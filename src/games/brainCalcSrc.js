@@ -19,13 +19,12 @@ const createRound = () => {
   const signs = ['+', '-', '*'];
 
   const randomSigns = signs[getRandomInt(0, signs.length)];
-  const firstNum = getRandomInt(0, 20);
-  const secondNum = getRandomInt(0, 20);
-  const randomExpression = `${firstNum} ${randomSigns} ${secondNum}`;
-  const question = `Question: ${randomExpression}`;
+  const firstNum = getRandomInt(10, 40);
+  const secondNum = getRandomInt(10, 40);
+  const dataForquestion = `${firstNum} ${randomSigns} ${secondNum}`;
   const trueAnswer = getTrueAnswer(firstNum, randomSigns, secondNum);
 
-  return [trueAnswer, question];
+  return [trueAnswer, dataForquestion];
 };
 
 const startCalcGame = () => {
