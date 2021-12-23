@@ -1,4 +1,4 @@
-# Heslet Project: Brain Games
+# Hexlet Project: Brain Games
 
 ### Hexlet tests and linter status:
 
